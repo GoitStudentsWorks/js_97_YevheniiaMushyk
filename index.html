@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/js_97_YevheniiaMushyk/favicon_dumbbell.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>EnergyFlow</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    
+    <script type="module" crossorigin src="/js_97_YevheniiaMushyk/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_97_YevheniiaMushyk/assets/vendor-8cce9181.js">
+    <link rel="modulepreload" crossorigin href="/js_97_YevheniiaMushyk/assets/scroll_to_top-9c2db907.js">
+    <link rel="stylesheet" href="/js_97_YevheniiaMushyk/assets/scroll_to_top-d3c5b646.css">
+    <link rel="stylesheet" href="/js_97_YevheniiaMushyk/assets/vendor-e5212ee8.css">
+  </head>
+  <body>
+    <div class="wrap_bg container">
+      <header class="container">
+  <div class="header">
+    <a class="header__logo" href="./index.html" target="_self">energy.flow</a>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-light_item">
+          <a href="./index.html" class="header__nav-link" target="_self"
+            >home</a
+          >
+        </li>
+
+        <li class="header__nav-item">
+          <a
+            href="./favorites.html"
+            class="header__nav-link light_text"
+            target="_self"
+            >favorites</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <ul class="header__icons">
+      <li>
+        <a
+          class="header__icon_link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          aria-label="facebook"
+        >
+          <svg class="header__icon_svg" width="28" height="28">
+            <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          class="header__icon_link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          aria-label="instagram"
+        >
+          <svg class="header__icon_svg" width="28" height="28">
+            <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          class="header__icon_link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          aria-label="youtube"
+        >
+          <svg class="header__icon_svg" width="28" height="28">
+            <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button class="header__button" type="button" title="Burger">
+      <svg class="header__button_svg" width="32" height="16">
+        <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-align-justify"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+
+
+      <section class="hero_container">
+  <div class="hero">
+    <div class="hero_main">
+      <div class="hero_img_container"></div>
+      <div class="hero_tag">
+        <div class="tag">#Sport</div>
+        <div class="tag">#Healthy</div>
+        <div class="tag">#Workout</div>
+        <div class="tag">#Diet</div>
+      </div>
+    </div>
+    <div class="hero-text">
+      <h1 class="hero_title">
+        Get <span class="body">Body</span> in shape, Stay healthy
+      </h1>
+      <p class="hero_p">
+        Transform your physique and embrace a healthier lifestyle with our
+        comprehensive fitness and nutrition support.
+      </p>
+    </div>
+  </div>
+</section>
+
+    </div>
+
+    <section class="quote-container">
+  <div class="quote-wrap">
+    <div class="quote-card">
+      <h2 class="disactive_video_window">quote by famous people</h2>
+      <div class="quote-card-top">
+        <div class="svg-container-man">
+          <svg class="quote-svg-man" width="44" height="44">
+            <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-run_man"></use>
+          </svg>
+        </div>
+        <h3 class="quote-card-label">Quote of the day</h3>
+        <div class="svg-container-coma">
+          <svg class="quote-svg-coma" width="48" height="48">
+            <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-inverted_commas28"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="quote-text">
+        <p class="quote-card-text"></p>
+        <p class="quote-card-author"></p>
+      </div>
+    </div>
+    <div class="quote-picture"></div>
+  </div>
+</section>
+
+
+    <section class="exercises">
+  <div class="container-ex">
+    <h2 class="exercises-name">Exercises</h2>
+    <div class="exercises-ft">
+      <ul class="exercises-buttons">
+        <li>
+          <button class="exercises-button-muscles" data-filter="muscles">
+            Muscles
+          </button>
+        </li>
+        <li>
+          <button class="exercises-button-bodypart" data-filter="bodypart">
+            Body Parts
+          </button>
+        </li>
+        <li>
+          <button class="exercises-button-equipment" data-filter="equipment">
+            Equipment
+          </button>
+        </li>
+      </ul>
+      <div class="exercises-search hidden">
+        <form class="exercises-search-form">
+          <input
+            placeholder="Search"
+            type="text"
+            class="exercises-input"
+            name="exercises"
+          />
+          <button type="submit" class="exercises-form-btn">
+            <svg
+              class="exercises-start-svg"
+              width="18"
+              height="18"
+              stroke="rgb(27, 27, 27)"
+              fill="#ffffff"
+            >
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <ul class="exercises-card-container"></ul>
+    <div id="pagination" class="tui-pagination"></div>
+    <div class="pagination-container">
+      <ul class="pagination-list"></ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    <section class="daily-section">
+  <div class="image_container"></div>
+  <div class="daily-card">
+    <h2 class="disactive_video_window">importance of sports</h2>
+    <div class="daily-container">
+      <div class="daily-icon">
+        <svg class="daily-icon-svg" width="16" height="12">
+          <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-dambbell"></use>
+        </svg>
+      </div>
+      <div class="daily-info">
+        <h3 class="daily-title">110 min</h3>
+        <p class="daily-text">Daily norm of sports</p>
+        <p class="daily-text">
+          The World Health Organization recommends at least 150 minutes of
+          moderate-intensity aerobic physical activity throughout the week for
+          adults aged 18-64. However, what happens if we adjust that number to
+          110 minutes every day?
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer>
+  <div class="footer-container">
+    <div class="footer-soc-input">
+      <div id="footer-logo-social">
+        <a
+          class="footer-logo"
+          target="_self"
+          id="footer-logo"
+          href="./index.html"
+          >energy.flow</a
+        >
+        <ul class="footer-social">
+          <li class="footer-social-icons">
+            <a
+              class="footer-soc-sv"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              aria-label="facebook"
+            >
+              <svg class="footer-svg" width="20" height="20">
+                <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="footer-social-icons">
+            <a
+              class="footer-soc-sv"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              aria-label="instagram"
+              ><svg class="footer-svg" width="20" height="20">
+                <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="footer-social-icons">
+            <a
+              class="footer-soc-sv"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              aria-label="youtube"
+              ><svg class="footer-svg" width="20" height="20">
+                <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-youtube"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-text-block">
+        <p class="footer-text">
+          Transforming your <span class="body-span">body</span> shape with us
+        </p>
+      </div>
+      <div class="form-ft">
+        <p class="form-text">Subscribe and learn about new exercises!</p>
+        <form class="footer-form">
+          <label class="footer-label" for="footer-input"></label>
+          <input
+            class="footer-input"
+            id="footer-input"
+            type="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            title="Email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <button class="footer-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-policy">
+      <p class="footer-text-policy">Energy Flow. All rights reserved.</p>
+      <p class="footer-text-policy footer-text-policy-half2">
+        Privacy Policy <span class="polici-slash">/</span> Terms of Service
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <button id="toTop">
+  <svg class="top-icon-svg" width="13" height="13">
+    <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-arrow"></use>
+  </svg>
+</button>
+
+
+    <span id="loader" class="loader loader_hidden"></span>
+
+
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">
+      <svg class="close-x" width="24" height="24">
+        <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-xb"></use>
+      </svg>
+    </span>
+    <img class="exercise-gif" src="#" alt="Exercise GIF" />
+    <div class="flex-container-modal">
+      <h3 class="exercise-title"></h3>
+
+      <div class="exercise-rating">
+        <div class="rating-box">
+          <p class="rating-number"></p>
+          <div class="gray-star">
+            <svg class="svg-star-gray" width="18" height="18">
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_grey"></use>
+            </svg>
+            <div class="container-yellow-star">
+              <div class="yellow-star">
+                <svg class="svg-star-gray" width="18" height="18">
+                  <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_yellow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="gray-star">
+            <svg class="svg-star-gray" width="18" height="18">
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_grey"></use>
+            </svg>
+            <div class="container-yellow-star">
+              <div class="yellow-star">
+                <svg class="svg-star-gray" width="18" height="18">
+                  <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_yellow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="gray-star">
+            <svg class="svg-star-gray" width="18" height="18">
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_grey"></use>
+            </svg>
+            <div class="container-yellow-star">
+              <div class="yellow-star">
+                <svg class="svg-star-gray" width="18" height="18">
+                  <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_yellow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="gray-star">
+            <svg class="svg-star-gray" width="18" height="18">
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_grey"></use>
+            </svg>
+            <div class="container-yellow-star">
+              <div class="yellow-star">
+                <svg class="svg-star-gray" width="18" height="18">
+                  <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_yellow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="gray-star">
+            <svg class="svg-star-gray" width="18" height="18">
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_grey"></use>
+            </svg>
+            <div class="container-yellow-star">
+              <div class="yellow-star">
+                <svg class="svg-star-gray" width="18" height="18">
+                  <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-star_yellow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-hr-top"></div>
+      <div class="exercise-details">
+        <p class="exercise-peculiarities">
+          Target: <span class="exercise-target"></span>
+        </p>
+        <p class="exercise-peculiarities">
+          Body Parts: <span class="exercise-bodyparts"></span>
+        </p>
+        <p class="exercise-peculiarities">
+          Equipment: <span class="exercise-equipment"></span>
+        </p>
+        <p class="exercise-peculiarities">
+          Popular: <span class="exercise-popular"></span>
+        </p>
+        <p class="exercise-peculiarities">
+          Burned Calories: <span class="exercise-calories"></span>
+        </p>
+      </div>
+      <div class="custom-hr-bot"></div>
+      <div class="exercise-description">
+        <p class="exercise-peculiarities-text">Description goes here...</p>
+      </div>
+      <div class="buttons-style">
+        <div class="div-button-favorite">
+          <button class="favorite-button">
+            Add to Favorites
+            <svg class="modal_icon" width="18" height="18">
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-heart"></use>
+            </svg>
+          </button>
+        </div>
+        <button class="rating-button" id="modal_rating">Give a rating</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <dialog class="modal_rating_window">
+  <div class="modal_rating__container">
+    <button class="modal_rating_close" type="button" title="Close modal window">
+      <svg class="modal_rating_icon" width="28" height="28">
+        <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-xb"></use>
+      </svg>
+    </button>
+    <form class="modal_rating_form" autocomplete="off">
+      <p class="modal_rating_text">rating</p>
+      <div class="modal_rating_part">
+        <h3 class="modal_rating_digit">0.0</h3>
+        <div class="modal_rating_stars">
+          <input id="rate-5" type="radio" name="rate" value="5" />
+          <label for="rate-5" class="fa-solid fa-star" data-rating="5"></label>
+          <input id="rate-4" type="radio" name="rate" value="4" />
+          <label for="rate-4" class="fa-solid fa-star" data-rating="4"></label>
+          <input id="rate-3" type="radio" name="rate" value="3" />
+          <label for="rate-3" class="fa-solid fa-star" data-rating="3"></label>
+          <input id="rate-2" type="radio" name="rate" value="2" />
+          <label for="rate-2" class="fa-solid fa-star" data-rating="2"></label>
+          <input id="rate-1" type="radio" name="rate" value="1" />
+          <label for="rate-1" class="fa-solid fa-star" data-rating="1"></label>
+        </div>
+      </div>
+      <input
+        class="modal_rating_input"
+        type="email"
+        name="email"
+        placeholder="Email"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        required
+      />
+      <textarea
+        class="modal_rating_textarea"
+        name="coment"
+        rows="8"
+        placeholder="Your comment"
+        required
+      ></textarea>
+      <button class="modal_rating_button" type="submit">send</button>
+    </form>
+  </div>
+</dialog>
+<script
+  src="https://kit.fontawesome.com/cee7c6938b.js"
+  crossorigin="anonymous"
+></script>
+
+    <dialog id="header_modal" class="header_modal">
+  <div class="modal__container">
+    <div class="modal__structure">
+      <div class="modal__header">
+        <a class="modal__logo" href="./index.html" target="_self"
+          >energy.flow</a
+        >
+        <button
+          class="modal__button_close"
+          type="button"
+          title="Close modal window"
+        >
+          <svg class="modal__button_icon" width="20" height="20">
+            <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="modal__nav">
+        <ul class="modal__nav-list">
+          <li class="modal__nav-item">
+            <a href="./index.html" class="modal__nav-link" target="_self"
+              >home</a
+            >
+          </li>
+          <li class="modal__nav-item">
+            <a
+              href="./favorites.html"
+              class="modal__nav-link_lightext"
+              target="_self"
+              >favorites</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="modal__icons">
+        <li>
+          <a
+            class="modal__icon_link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            aria-label="facebook"
+          >
+            <svg class="modal__icon_svg" width="28" height="28">
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="modal__icon_link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            aria-label="instagram"
+          >
+            <svg class="modal__icon_svg" width="28" height="28">
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="modal__icon_link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            aria-label="youtube"
+          >
+            <svg class="modal__icon_svg" width="28" height="28">
+              <use href="/js_97_YevheniiaMushyk/assets/icons-e2846af5.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</dialog>
+
+  </body>
+</html>
